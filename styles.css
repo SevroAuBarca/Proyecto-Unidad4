@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: inherit;
+    height: inherit;
+    display: flex;
+}
+.container .caja:first-child{
+    width: 30%;
+    height: 100vh;
+    background: #a5e1ad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .caja:first-child .input{
+    width: 100%;
+    height: 60vh;
+    background: #21094e;
+    color: darkgray;
+    font-size: 1.5em;
+}
+.container .caja:first-child .boton{
+    position: relative;
+    top: 10vh;
+    padding: 20px 30px;
+    font-size: 2em;
+    border-radius: 10px;
+    border: none;
+    background: #21094e;
+    cursor: pointer;
+    transition:  .3s ease-out;
+    color:darkseagreen;
+}
+.container .caja:first-child .boton:hover{
+    background: #511281;
+}
+.container .caja:last-child{
+    width: 70%;
+    height: 100vh;
+    background: #4ca1a3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container .caja:last-child .box:first-child{
+    position: relative;
+    top: 3vh;
+    width: 90%;
+    height: 10vh;
+    background: #511281;
+}
+.container .caja:last-child .box:last-child{
+    position: relative;
+    top: 7vh;
+    width: 90%;
+    height: 80vh;
+    background:#511281;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tabla {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    border: 1px solid pink;
+    border-radius: 10px;
+    background: slategrey;
+}
+.td{
+    width: 5%;
+    height: 100%;
+    text-align: left;
+    padding-top: 22px;
+    overflow: hidden;
+    vertical-align:top;
+    border: 0;
+    text-align: center;
+}
+.tdnombre{
+    background: slateblue;
+    overflow: hidden;
+}
+.td_datos{
+    background: darkolivegreen;
+    overflow: hidden;
+}
+.tdsumas{
+    background:darkseagreen;
+    overflow: hidden;
+}
+.total {
+    position:relative;
+    bottom: 65px;
+    font-size: 2em;
+    overflow: hidden;
+}
+
